@@ -65,7 +65,7 @@ public class admin extends Database{
     public String login(String username, String password) {
         String idAdmin = "";
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/kel6?user=root&password=");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/klinik?user=root&password=");
 
             // Buat SQL query untuk memeriksa keberadaan username dan password yang sesuai
             String query = "SELECT * FROM admin WHERE username= ? AND password = ?";
