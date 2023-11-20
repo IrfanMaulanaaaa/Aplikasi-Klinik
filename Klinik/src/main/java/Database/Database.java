@@ -17,7 +17,7 @@ public class Database {
         
 public final Connection openConnection() {
         try {
-            this.connection = DriverManager.getConnection("jdbc:mysql://localhost/kel6?user=root&password=");
+            this.connection = DriverManager.getConnection("jdbc:mysql://localhost/klinik?user=root&password=");
             System.out.println("MYSQL successfully connected");
         } catch (SQLException ex) {
             this.displayErrors(ex);
