@@ -28,7 +28,7 @@ public class dokter extends Database{
     public boolean login(String idDokter, String password) {
         boolean isValidUser = false;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/kel6?user=root&password=");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/klinik?user=root&password=");
 
             // Buat SQL query untuk memeriksa keberadaan username dan password yang sesuai
             String query = "SELECT * FROM dokter WHERE id_dokter= ? AND password = ?";
